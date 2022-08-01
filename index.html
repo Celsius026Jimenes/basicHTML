@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica</title>
+  </head>
+  <body>
+    <header class="hed">
+      <div class="hed_Cebezado">
+        <h1 class="hed_titulo">Curso Esencial de HTML y CSS</h1>
+        <p class="hed_parrafo">
+          Este es el inicio de tu carrera como Desarrollador Web, empezarás
+          aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2
+          aprenderás de componentes y en 3 sobre layouts.
+        </p>
+      </div>
+    </header>
+
+    <aside class="inside_left">
+      <details>
+        <summary>Setup</summary>
+        <ol>
+          <li><a href="#chrome">Google Chrome</a></li>
+          <li><a href="#visual">Visual Studio Code</a></li>
+          <li><a href="#figma">Figma</a></li>
+          <li><a href="#githup">GitHup</a></li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Conceptos esenciales del Desarrollo Web</summary>
+        <ol>
+          <li><a href="#html">Que es HTML?</a></li>
+          <li><a href="#dom">DOM</a></li>
+          <li><a href="#semantica">Semantica</a></li>
+          <li><a href="#atributos">Atributos</a></li>
+          <li><a href="#CSS">Que es CSS</a></li>
+        </ol>
+      </details>
+    </aside>
+
+    <main>
+      <section class="setup">
+        <h2 class="setup_titulo">Setup</h2>
+        <article id="chrome" class="setup_chrome">
+          <img src="/img/chrome.svg" alt="#" class="imagen_bod_setup" />
+          <h3 class="setup_h3">1.Google Chrome</h3>
+          <p class="setup_parrafo">
+            Chrome va a ser el navegador que utilizaremos en el curso por su
+            extenso soporte de nuevos estándares y herramientas de desarrollo
+            avanzadas y de amigable uso.
+          </p>
+        </article>
+
+        <article id="visual" class="setup_visual">
+          <img src="/img/visual.svg" alt="#" class="imagen_bod_setup" />
+          <h3 class="setup_h3">2.Visual Studio Code</h3>
+          <p class="setup_parrafo">
+            Visual Studio Code es el editor de texto más popular y potente del
+            mercado actualmente, su fácil uso y la capacidad de extenderlo por
+            medio de plugins lo hace el complemento perfecto para cualquier
+            programador sin importar el lenguaje en el que se desemvuelva.
+          </p>
+        </article>
+
+        <article id="figma" class="setup_figma">
+          <img src="/img/chrome.svg" alt="#" class="imagen_bod_setup" />
+          <h3 class="setup_h3">3.Figma</h3>
+          <p class="setup_parrafo">
+            Figma es una la herramienta más popular en la actualidad para
+            entregar diseños a los desarrolladores para su implementación por su
+            fácil uso porque puede ser usado directamente desde el navegador.
+          </p>
+        </article>
+
+        <article id="githup" class="setup_githup">
+          <img src="/img/githup.svg" alt="#" class="imagen_bod_setup" />
+          <h3 class="setup_h3">4.GitHup</h3>
+          <p class="setup_parrafo">
+            Así como en Facebook te encuentran tus amigos, en Github te
+            encuentran otras programadoras y programadores de todo el mundo, en
+            vez de subir fotos de tus viajes aquí subes tu código y puedes
+            elegir hacerlo “open source” o guardarlo de manera privada, Github
+            será esencial para almacenar tu futuro portafolio.
+          </p>
+        </article>
+
+        <div class="setup_code">
+          <pre>
+            <code>“Este es el inicio de tu carrera como Desarrollador Web”</code>
+        </pre>
+        </div>
+      </section>
+
+      <section class="esencial-wep">
+        <h2 class="esencial-wep_titulo">
+          Conceptos esenciales del Desarrollo Web
+        </h2>
+        <div id="html" class="esencial-web_html">
+          <h3 class="esencial-wep_h3">html</h3>
+          <p class="esecial-web_parrafo">
+            Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el
+            componente más básico de la web. Define el significado y la
+            estructura del contenido.
+          </p>
+          <div class="esencial-web_code">
+            <pre>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang=&quot; en&quot;&gt;
+                    &lt;head&gt;
+                    &lt;meta charset=&quot;UTF-8&quot;&gt;
+                    &lt;meta name=&quot; viewport&quot; content=&quot;width=device-width, initial-scale=1.0
+                    &lt;title&gt; Document&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+        
+                </code>
+            </pre>
+          </div>
+        </div>
+        <div id="etiquetas" class="esencial-wep_etiquetas">
+          <h3 class="esencial-wep_h3">Etiquetas</h3>
+          <p class="asencial-wep_parrafo">
+            Las etiquetas HTML van a ayudarnos a brindar una estructura y
+            semántica al contenido de nuestro website y cada una tiene
+            características y usos diferentes aunque visualmente den un
+            resultado similar.
+          </p>
+          <p class="asencial-wep_parrafo">
+            Muchas etiquetas son fácil de diferencias como los headings o las
+            imágenes y otras diferentes como header, footer, section o div, aquí
+            es donde la semántica será la respuesta y si sabemos un poco de
+            inglés también podremos darnos una pequeña idea de su uso pero en
+            este curso vamos a usar las más importantes y que serán parte de tu
+            día a día como Software Developer.
+          </p>
+        </div>
+
+        <div id="dom" class="esencial-wep_dom">
+          <h3 class="esencial-wep_h3">DOM</h3>
+          <p class="esencial-wep_parrafo">
+            El Document Object Model es una estructura de árbol que representará
+            todos nuestros proyectos web como si un árbol genealógico fuera:
+            padres, hijos, hermanos con niveles infinitos. cuando entendemos
+            esta anidación podemos identificar dependencias, herencias en css y
+            que tan complejo es nuestro proyecto.
+          </p>
+          <img src="/img/tilin.svg" alt="#" />
+        </div>
+
+        <div id="semantica" class="esencial-wep_semantica">
+          <h3 class="esencial-wep_h3">Semantica</h3>
+          <p class="esencial-wep_parrafo">
+            La semántica le brinda sentido a cada elemento existen en un sitio
+            web, algunos elementos será meramente decorativos y no deben
+            significar nada pero otros serán títulos y deberán estar en
+            diferente jerarquías o alguna secciones serán más relevantes que
+            otras, esto ayudará a los motores de búsqueda como Google o Duck
+            Duck Go a diferenciar tu contenido, categorizar y será la
+            herramientas más valiosa para estar en los primeros resultados de
+            búsqueda SEO. También ayudará a la accesibilidad de tu sitio web,
+            para que personas con habilidades diferentes puedan entender cada
+            contenido.
+          </p>
+        </div>
+
+        <div id="atributos" class="esencial-web_atributos">
+          <h3 class="esencial-wep_h3">Atributos</h3>
+          <p class="esencial-wep_parrafo">
+            Los atributos le dan características extra a las etiquetas para
+            complementar información y son pre programadas por el navegador,
+            algunos atributos funcionan en todas las etiquetas de la misma forma
+            como ‘class’ pero otros atributos funcionan en solo alguna etiquetas
+            como src
+          </p>
+        </div>
+
+        <div id="CSS" class="esencial-wep_CSS">
+          <h3 class="esencial-wep_h3">CSS</h3>
+          <p class="esencial-wep_parrafo">
+            Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS
+            es el lenguaje de estilos utilizado para describir la presentación
+            de documentos HTML
+          </p>
+          <img src="/img/css.svg" alt="#" />
+        </div>
+      </section>
+
+      <section class="model-caja">
+        <h2 class="model-caja_titulo">Modelo de Caja</h2>
+        <div class="model-caja_fisico">
+          <h3 class="model-caja_h3">
+            Propiedades físicas para el modelo de caja:
+          </h3>
+          <ul>
+            <li class="model-caja_parrajo">width / height</li>
+            <li class="model-caja_parrajo">
+              margin / margin-top | margin-right | margin-bottom | margin-left
+            </li>
+            <li class="model-caja_parrajo">
+              border / border-top | border-right | border-bottom | border-left
+            </li>
+            <li class="model-caja_parrajo">
+              padding / padding-top | padding-right | padding-bottom |
+              padding-left
+            </li>
+          </ul>
+        </div>
+
+        <div class="model-caja_logico">
+          <h3 class="model-caja_h3">
+            Propiedades Logicas para el modelo de caja
+          </h3>
+          <ul>
+            <li class="model-caja_parrafo">inline-size / block-size</li>
+            <li class="model-caja_parrafo">
+              margin-block | margin-inline | margin-block-start |
+              margin-block-end | margin-inline-start | margin-inline-end
+            </li>
+            <li class="model-caja_parrafo">
+              border-block | border-inline | border-block-start |
+              border-block-end | border-inline-start | border-inline-end
+            </li>
+            <li class="model-caja_parrafo">
+              padding-block | padding-inline | padding-block-start |
+              padding-block-end | padding-inline-start | padding-inline-end
+            </li>
+          </ul>
+        </div>
+
+        <div class="model-caja_img">
+          <img src="/img/model_caja.svg" alt="#" />
+        </div>
+      </section>
+      <div class="contac">
+        Si tienes alguna pregunta escríbeme a me@leonidasesteban.com
+      </div>
+      <form>
+        <input type="text" placeholder="Nombre" />
+        <br />
+        <br />
+        <input type="email" placeholder="Correo electrónico" />
+        <br />
+        <br />
+        <input type="submit" value="Suscribirme" />
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; Leonidas Esteban 2021</p>
+      <a href="#"><img src="/img/footer-instagram.svg" alt="" /></a>
+      <a href="#"><img src="/img/footer-face.svg" alt="" /></a>
+      <a href="#"><img src="/img/footer-tw.svg" alt="" /></a>
+    </footer>
+  </body>
+</html>
